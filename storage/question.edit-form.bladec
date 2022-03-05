@@ -1,0 +1,26 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('main-content'); ?>
+
+<div class="row">
+ <div class="col-12">
+ <div class="card">
+ <div class="card-body">
+ <form action="" method="post">
+ <div class="col-6 offset-3">
+ <div class="form-group">
+ <label for="">Tên môn học</label>
+ <input type="text" name="name" class="form-control" value="">
+ </div>
+ <div class="">
+ <button type="submit" class="btn btn-sm btn-primary">Lưu</button>
+ &nbsp;
+ <a href="">Hủy</a>
+ </div>
+ </div>
+ </form>
+ </div>
+ </div>
+ </div>
+</div>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layouts.main'); } ?>
